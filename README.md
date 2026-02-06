@@ -7,19 +7,19 @@
 
 [🇫🇷 Lire la documentation en Français](README.fr.md)
 
-## 🚀 Key Features
+## Key Features
 
-*   **🛡️ Crash Prevention**: Automatically captures `uncaughtException` and `unhandledRejection` to prevent process crashes (configurable).
-*   **💾 Reliable Storage**: Persists alerts in **Redis** using Lists (`RPUSH`), ensuring reliable history and FIFO processing.
-*   **✅ Configurable Validation**: Integrated **Zod** schemas ensure data integrity for configuration and alerts at runtime.
-*   **📘 TypeScript First**: Written in strict TypeScript, providing comprehensive type definitions and IDE autocompletion.
-*   **🔌 Integrations**:
+*   **Crash Prevention**: Automatically captures `uncaughtException` and `unhandledRejection` to prevent process crashes (configurable).
+*   **Reliable Storage**: Persists alerts in **Redis** using Lists (`RPUSH`), ensuring reliable history and FIFO processing.
+*   **Configurable Validation**: Integrated **Zod** schemas ensure data integrity for configuration and alerts at runtime.
+*   **TypeScript First**: Written in strict TypeScript, providing comprehensive type definitions and IDE autocompletion.
+*   **Integrations**:
     *   **Redis Pub/Sub**: Real-time alert broadcasting.
     *   **HTTP Webhooks**: Forward alerts to external APIs (Slack, Discord, custom monitoring).
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 npm install alert-watchdog
@@ -29,7 +29,7 @@ npm install alert-watchdog
 
 ---
 
-## 🏁 Quick Start
+## Quick Start
 
 ### 1. TypeScript / ES Modules (Recommended)
 
@@ -66,7 +66,7 @@ init().then(() => {
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 You can configure `alert-watchdog` via the `init()` function or Environment Variables (Twelve-Factor App compliant).
 
@@ -89,7 +89,7 @@ See [.env.example](.env.example) for a complete template.
 
 ---
 
-## 📚 API Reference
+## API Reference
 
 ### `init(config)`
 Initializes the internal Redis client and configuration.
@@ -111,7 +111,7 @@ Sets up a global trap for unhandled exceptions.
 
 ---
 
-## 🛠️ Development & Best Practices
+## Development & Best Practices
 
 ### Workflow
 This project uses **TypeScript** and **Standard Version** for release management.
@@ -137,5 +137,5 @@ npm run release
 
 ---
 
-## 📄 License
+## License
 ISC
